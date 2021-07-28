@@ -1,7 +1,7 @@
 let toDoItems = [];
 
-let span = document.querySelector("#createdBy");
-span.innerHTML += " Juan Ignacio Hotz";
+let span = document.querySelector('#createdBy');
+span.innerHTML += ' Juan Ignacio Hotz';
 
 function ToDo(description) {
   this.description = description;
@@ -13,27 +13,27 @@ ToDo.prototype.completeToDo = function () {
 };
 
 function buildToDo(todo, index) {
-  let toDoShell = document.createElement("div");
+  let toDoShell = document.createElement('div');
 
-  toDoShell.className = "toDoShell";
+  toDoShell.className = 'toDoShell';
 
-  let toDoText = document.createElement("span");
+  let toDoText = document.createElement('span');
 
   toDoText.innerHTML = todo.description;
 
-  let checkBox = document.createElement("INPUT");
+  let checkBox = document.createElement('INPUT');
 
-  checkBox.setAttribute("type", "checkbox");
-  checkBox.setAttribute("checked", "checkbox");
+  checkBox.setAttribute('type', 'checkbox');
+  checkBox.setAttribute('checked', 'checkbox');
 
   checkBox.checked = false;
   checkBox.id = index;
-  checkBox.className = "completeCheckBox";
+  checkBox.className = 'completeCheckBox';
 
-  checkBox.addEventListener("click", completeToDo);
+  checkBox.addEventListener('click', completeToDo);
 
   if (todo.complete) {
-    toDoText.className = "completeText";
+    toDoText.className = 'completeText';
     checkBox.checked = true;
   }
 
@@ -48,7 +48,7 @@ function buildToDos(toDos) {
 }
 
 function displayToDos() {
-  let toDoContainer = document.getElementById("toDoContainer");
+  let toDoContainer = document.getElementById('toDoContainer');
 
   toDoContainer.innerHTML = "";
 
@@ -58,9 +58,9 @@ function displayToDos() {
 }
 
 function addToDo() {
-  let inputValue = document.querySelector("#toDoInput").value;
+  let inputValue = document.querySelector('#toDoInput').value;
 
-  if (inputValue !== "") {
+  if (inputValue !== '') {
     let newToDo = new ToDo(inputValue);
 
     if (toDoItems.length === 0) {
@@ -68,23 +68,20 @@ function addToDo() {
     } else {
       toDoItems.forEach((element) => {
         if (newToDo.description === element.description) {
-          alert("Ya existe una tarea con esa descripción");
-          return;
+          return alert('There is already a task with that description');
         } else {
           toDoItems.push(newToDo);
         }
       });
     }
   } else {
-    alert("No puedes agregar tareas vacias.");
+    return alert('You cannot add empty tasks');
   }
-
-  inputValue.value = "";
-
+  inputValue.value = '';
   displayToDos();
 }
 
-let button = document.getElementById("addButton");
+let button = document.getElementById('addButton');
 button.addEventListener("click", addToDo);
 
 function completeToDo(event) {
