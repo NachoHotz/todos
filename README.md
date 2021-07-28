@@ -1,15 +1,15 @@
 
 # Todo App
-
 ---
 App made with plain JavaScript that allows the following features:
 
 	* Add a todo.
 	* Check a todo as completed.
-	* DOM events
 ---
 The app was made primarly to practice the manipulation of the DOM with only JavaScript.
 
 ## How to use
 
-Simply open the file `index.js` to start utilizing the app.
+First execute `npm install` inside the folder.
+
+Then, once it´s done, simply open the file `index.js` to start utilizing the app.
