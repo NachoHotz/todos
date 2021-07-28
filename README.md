@@ -1,15 +1,15 @@
-# Homework DOM
 
-## Instrucciones
+# Todo App
+
 ---
-1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión
+App made with plain JavaScript that allows the following features:
 
-	* DOM
-	* DOM element selectors
+	* Add a todo.
+	* Check a todo as completed.
 	* DOM events
+---
+The app was made primarly to practice the manipulation of the DOM with only JavaScript.
 
-2. Desde la carpeta `homework`, ejecuta el comando `npm install` para instalar las librerías necesarias para la ejecución de los tests
+## How to use
 
-3. Desde la carpeta `homework`, ejecuta el comando `npm test DOM.test.js` para correr los tests automatizados. Al principio, todos tests estarán fallados/rotos. Encontrarás las funciones para hacer pasar los tests en el archivo `DOMhomework.js`
-
-4. Una vez finalizada la homework, desde la carpeta `homework`, ejecuta el comando `node submit.js` para subir tus cambios a tu repositorio y los resultados de tus tests.
+Simply open the file `index.js` to start utilizing the app.
