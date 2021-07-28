@@ -1,6 +1,6 @@
 # Todo App
 ---
-App made with plain JavaScript that allows the following features:
+App made with plain JavaScript that has the following features:
 
 	* Add a todo.
 	* Check a todo as completed.
