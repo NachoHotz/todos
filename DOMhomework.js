@@ -1,8 +1,5 @@
 const toDoItems = [];
 
-const span = document.querySelector('#createdBy');
-span.innerHTML += ' Juan Ignacio Hotz';
-
 function ToDo(description) {
   this.description = description;
   this.complete = false;
