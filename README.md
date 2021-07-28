@@ -1,4 +1,3 @@
-
 # Todo App
 ---
 App made with plain JavaScript that allows the following features:
