@@ -1,6 +1,6 @@
-let toDoItems = [];
+const toDoItems = [];
 
-let span = document.querySelector('#createdBy');
+const span = document.querySelector('#createdBy');
 span.innerHTML += ' Juan Ignacio Hotz';
 
 function ToDo(description) {
@@ -13,30 +13,24 @@ ToDo.prototype.completeToDo = function () {
 };
 
 function buildToDo(todo, index) {
-  let toDoShell = document.createElement('div');
-
+  const toDoShell = document.createElement('div');
   toDoShell.className = 'toDoShell';
 
-  let toDoText = document.createElement('span');
-
+  const toDoText = document.createElement('span');
   toDoText.innerHTML = todo.description;
 
-  let checkBox = document.createElement('INPUT');
-
+  const checkBox = document.createElement('INPUT');
   checkBox.setAttribute('type', 'checkbox');
   checkBox.setAttribute('checked', 'checkbox');
-
   checkBox.checked = false;
   checkBox.id = index;
   checkBox.className = 'completeCheckBox';
-
   checkBox.addEventListener('click', completeToDo);
 
   if (todo.complete) {
     toDoText.className = 'completeText';
     checkBox.checked = true;
   }
-
   toDoShell.appendChild(toDoText);
   toDoShell.appendChild(checkBox);
 
@@ -48,20 +42,18 @@ function buildToDos(toDos) {
 }
 
 function displayToDos() {
-  let toDoContainer = document.getElementById('toDoContainer');
-
+  const toDoContainer = document.getElementById('toDoContainer');
   toDoContainer.innerHTML = "";
 
-  let arrayToDos = buildToDos(toDoItems);
-
+  const arrayToDos = buildToDos(toDoItems);
   arrayToDos.forEach((element) => toDoContainer.appendChild(element));
 }
 
 function addToDo() {
-  let inputValue = document.querySelector('#toDoInput').value;
+  const inputValue = document.querySelector('#toDoInput').value;
 
   if (inputValue !== '') {
-    let newToDo = new ToDo(inputValue);
+    const newToDo = new ToDo(inputValue);
 
     if (toDoItems.length === 0) {
       toDoItems.push(newToDo);
@@ -81,7 +73,7 @@ function addToDo() {
   displayToDos();
 }
 
-let button = document.getElementById('addButton');
+const button = document.getElementById('addButton');
 button.addEventListener("click", addToDo);
 
 function completeToDo(event) {
