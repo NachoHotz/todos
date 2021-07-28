@@ -7,7 +7,7 @@ App made with plain JavaScript that has the following features:
 ---
 The app was made primarly to practice the manipulation of the DOM with only JavaScript.
 
-## How to use
+### How to use
 
 First execute `npm install` inside the folder.
 
