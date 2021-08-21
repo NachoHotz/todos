@@ -28,6 +28,7 @@ function buildToDo(todo, index) {
     toDoText.className = 'completeText';
     checkBox.checked = true;
   }
+
   toDoShell.appendChild(toDoText);
   toDoShell.appendChild(checkBox);
 
@@ -66,6 +67,7 @@ function addToDo() {
   } else {
     return alert('You cannot add empty tasks');
   }
+
   inputValue.value = '';
   displayToDos();
 }
