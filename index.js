@@ -58,14 +58,14 @@ function addToDo() {
     } else {
       toDoItems.forEach((element) => {
         if (newToDo.description === element.description) {
-          return alert('There is already a task with that description');
+          return alert('There is already a todo with that description');
         } else {
           toDoItems.push(newToDo);
         }
       });
     }
   } else {
-    return alert('You cannot add empty tasks');
+    return alert('You cannot add empty todo');
   }
 
   inputValue.value = '';
