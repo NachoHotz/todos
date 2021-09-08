@@ -17,4 +17,4 @@ Then, once it´s done, open the `index.html` file to use the app.
 
 ## Screenshots
 
-![1](https://user-images.githubusercontent.com/72778896/132430202-2e25deb1-186d-44ff-9210-970c3f0fc5af.jpg)
+![2](https://user-images.githubusercontent.com/72778896/132430359-1e6ca7d3-20d7-4255-b7e7-9875efcb7a7e.jpg)
