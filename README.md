@@ -15,3 +15,6 @@ First execute `npm install` inside the folder.
 
 Then, once it´s done, open the `index.html` file to use the app.
 
+## Screenshots
+
+![1](https://user-images.githubusercontent.com/72778896/132430202-2e25deb1-186d-44ff-9210-970c3f0fc5af.jpg)
