@@ -21,5 +21,5 @@ If you do not want to run the app locally, head into <http://todo-app-one-pearl.
 
 ## Screenshots
 
-![2](https://user-images.githubusercontent.com/72778896/132430359-1e6ca7d3-20d7-4255-b7e7-9875efcb7a7e.jpg)
+![Screenshot_2022-01-16_20-06-39](https://user-images.githubusercontent.com/72778896/149681931-adf58071-4aee-4d12-842c-314bde6b315b.png)
 
