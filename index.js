@@ -1,13 +1,14 @@
 const toDoItems = [];
 
-function ToDo(description) {
-  this.description = description;
-  this.complete = false;
+class ToDo {
+  constructor(description) {
+    this.description = description;
+    this.complete = false;
+  }
+  completeToDo() {
+    this.complete = !this.complete;
+  }
 }
-
-ToDo.prototype.completeToDo = function () {
-  this.complete = !this.complete;
-};
 
 function buildToDo(todo, index) {
   const toDoShell = document.createElement('article');
