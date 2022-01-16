@@ -10,7 +10,7 @@ ToDo.prototype.completeToDo = function () {
 };
 
 function buildToDo(todo, index) {
-  const toDoShell = document.createElement('div');
+  const toDoShell = document.createElement('article');
   toDoShell.className = 'toDoShell';
 
   const toDoText = document.createElement('span');
@@ -41,7 +41,7 @@ function buildToDos(toDos) {
 
 function displayToDos() {
   const toDoContainer = document.getElementById('toDoContainer');
-  toDoContainer.innerHTML = "";
+  toDoContainer.innerHTML = '';
 
   const arrayToDos = buildToDos(toDoItems);
   arrayToDos.forEach((element) => toDoContainer.appendChild(element));
@@ -73,7 +73,7 @@ function addToDo() {
 }
 
 const button = document.getElementById('addButton');
-button.addEventListener("click", addToDo);
+button.addEventListener('click', addToDo);
 
 function completeToDo(event) {
   const index = event.target.id;
